@@ -13,7 +13,8 @@
     <%= javascript_include_tag  "all" %>
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="<%= page_classes %> padded">
+    <!--header-->
     <nav class="navbar navbar-default navbar-fixed-top navbar-wagon" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -25,7 +26,7 @@
             <span class="icon-bar"></span>
           </button>
           <% link_to "/index.html", class: "navbar-brand" do %>
-            <%= image_tag 'logo.svg' %>
+            <%= image_tag 'makers_logo.svg' %>
           <% end %>
         </div>
 
@@ -57,5 +58,32 @@
     </nav>
 
     <%= yield %>
+
+    <!--footer-->
+    <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <ul class="list-inline">
+            <li>
+              <a href=""><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-github"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-6 text-right">
+          <p>Makers is a product by CloverBrothers©</p>
+        </div>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
